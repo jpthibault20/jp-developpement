@@ -1,10 +1,14 @@
+"use client"
+
+import Navbar from '@/components/Navbar'
 import React from 'react'
 
 const contact = () => {
   return (
-    <div>
+    <>
+    <Navbar />
       <h1>contact page</h1>
-    </div>
+    </>
   )
 }
 
