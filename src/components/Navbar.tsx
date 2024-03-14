@@ -2,14 +2,8 @@ import React from "react";
 import { Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, NavbarContent, NavbarItem, Link, Button } from "@nextui-org/react";
 import { MyLogo } from "./AcmeLogo.jsx";
 
-export default function App() {
-  const menuItems = [
-    "Accueil",
-    "Services",
-    "Developpeurs",
-    "Contact",
+export default function App({activePage}: {activePage: string}) {
 
-  ];
 
   return (
     <Navbar disableAnimation
@@ -42,22 +36,22 @@ export default function App() {
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="start">
-        <NavbarItem>
+        <NavbarItem isActive={activePage === "accueil"}>
           <Link color="foreground" href="/">
             Accueil
           </Link>
         </NavbarItem>
-        <NavbarItem>
+        <NavbarItem isActive={activePage === "services"}>
           <Link color="foreground" href="/services">
             Services
           </Link>
         </NavbarItem>
-        <NavbarItem>
+        <NavbarItem isActive={activePage === "developer"}>
           <Link color="foreground" href="/developer">
             Developpeurs
           </Link>
         </NavbarItem>
-        <NavbarItem>
+        <NavbarItem isActive={activePage === "contact"}>
           <Link color="foreground" href="/contact">
             Contact
           </Link>
