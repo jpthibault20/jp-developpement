@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, NavbarContent, NavbarItem, Link, Button } from "@nextui-org/react";
-import { AcmeLogo } from "./AcmeLogo.jsx";
+import { MyLogo } from "./AcmeLogo.jsx";
 
 export default function App() {
   const menuItems = [
@@ -22,8 +22,8 @@ export default function App() {
 
       <NavbarContent className="sm:hidden pr-3" justify="start">
         <NavbarBrand>
-          <AcmeLogo />
-          <p className="font-bold text-inherit">JP-Developpement</p>
+          <MyLogo />
+          {/* <p className="font-bold text-inherit">JP-Developpement</p> */}
         </NavbarBrand>
       </NavbarContent>
 
@@ -36,8 +36,8 @@ export default function App() {
 
       <NavbarContent className="hidden sm:flex gap-4" >
         <NavbarBrand className="flex justify-start">
-          <AcmeLogo />
-          <p className="font-bold text-inherit">JP-Developpement</p>
+          <MyLogo />
+          {/* <p className="font-bold text-inherit">JP-Developpement</p> */}
         </NavbarBrand>
       </NavbarContent>
 
