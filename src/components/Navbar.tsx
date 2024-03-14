@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, NavbarContent, NavbarItem, Link, Button } from "@nextui-org/react";
-import { MyLogo } from "./AcmeLogo.jsx";
+import { JPLogo } from "@/components/JPLogo";
 
 export default function App({activePage}: {activePage: string}) {
 
@@ -16,7 +16,7 @@ export default function App({activePage}: {activePage: string}) {
 
       <NavbarContent className="sm:hidden pr-3" justify="start">
         <NavbarBrand>
-          <MyLogo />
+          <JPLogo />
           {/* <p className="font-bold text-inherit">JP-Developpement</p> */}
         </NavbarBrand>
       </NavbarContent>
@@ -30,7 +30,7 @@ export default function App({activePage}: {activePage: string}) {
 
       <NavbarContent className="hidden sm:flex gap-4" >
         <NavbarBrand className="flex justify-start">
-          <MyLogo />
+          <JPLogo />
           {/* <p className="font-bold text-inherit">JP-Developpement</p> */}
         </NavbarBrand>
       </NavbarContent>
@@ -84,7 +84,6 @@ export default function App({activePage}: {activePage: string}) {
             Contact
           </Link>
         </NavbarMenuItem>
-
       </NavbarMenu>
     </Navbar>
   );
