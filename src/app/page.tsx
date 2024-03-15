@@ -24,17 +24,17 @@ const home = () => {
         Nibh mauris cursus mattis molestie a iaculis. Ac felis donec et odio pellentesque diam volutpat commodo sed.
       </p>
 
-      <div className='lg:place-content-center lg:grid lg:grid-cols-2 lg:gap-48 lg:mx-auto place-content-center grid grid-cols-2 gap-10 mx-auto'>
-        <Button variant="ghost" className="bg-[#4f46e5] text-white drop-shadow-xl rounded-2xl">
-          Contactez-nous
-        </Button>
-        <Button variant="ghost" className="bg-[#4f46e5] text-white drop-shadow-xl rounded-2xl">
-          Obtenir un devis
-        </Button>
-      </div>
+      <div className='flex justify-center'>
+          <Button variant="ghost" className="bg-[#4f46e5] text-white drop-shadow-xl rounded-2xl w-[150px] mr-10">
+            Contactez-nous
+          </Button>
+          <Button variant="ghost" className="bg-[#4f46e5] text-white drop-shadow-xl rounded-2xl w-[150px]">
+            Obtenir un devis
+          </Button>
+        </div>
 
 
-      <div className="w-full  bg-[#4f46e5] mt-20 text-[#c7d2fe]">
+      <div className="  bg-[#4f46e5] mt-20 text-[#c7d2fe]">
         <h1 className='text-center mt-10 text-3xl'>Nos Compétences</h1>
         <p className='m-10 lg:mx-60 leading-relaxed text-justify'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -44,7 +44,18 @@ const home = () => {
           Ipsum a arcu cursus vitae congue mauris.
         </p>
         <Carousel />
+
+        <div className='flex justify-center mb-10'>
+          <Button variant="ghost" className="bg-[#c7d2fe] text-black drop-shadow-xl rounded-2xl w-[150px] mr-10">
+            Contactez-nous
+          </Button>
+          <Button variant="ghost" className="bg-[#c7d2fe] text-black drop-shadow-xl rounded-2xl w-[150]">
+            Obtenir un devis
+          </Button>
+        </div>
       </div>
+
+
 
       <div className='m-10 lg:mx-60 '>
         <h1 className="text-center my-10 text-3xl">Ce Qu&apos;ils Disent De Nous</h1>

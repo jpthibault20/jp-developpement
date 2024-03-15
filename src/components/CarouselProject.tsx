@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import {
   Carousel,
@@ -9,7 +10,10 @@ import {
 import { Card } from '@nextui-org/react'
 import { CardContent } from './ui/card'
 import Image from 'next/image';
+import Autoplay from "embla-carousel-autoplay"
+
 import test from '../../public/image/carousel-1.svg'
+
 
 const dataProject = [
   {
@@ -34,9 +38,15 @@ const dataProject = [
   },
 ]
 const CarouselProject = () => {
+
   return (
     <div className="flex justify-center mb-10">
-      <Carousel className="w-full max-w-2xl">
+      <Carousel className="w-full max-w-2xl"
+      plugins={[
+        Autoplay({
+          delay: 2000,
+        }),
+      ]}>
         <CarouselContent>
           {dataProject.map((item, idx) => (
             <CarouselItem key={idx}>
