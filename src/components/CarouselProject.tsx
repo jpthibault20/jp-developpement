@@ -12,28 +12,31 @@ import { CardContent } from './ui/card'
 import Image from 'next/image';
 import Autoplay from "embla-carousel-autoplay"
 
-import test from '../../public/image/carousel-1.svg'
+import jpDev from '../../public/image/reacNextjs.png'
+import datalog from '../../public/image/datalogger.jpg'
+import dom from '../../public/image/homeAssistant.png'
+import teeShirt from '../../public/image/teeShirtConnect.jpg'
 
 
 const dataProject = [
   {
     title: "JP-Developement.com",
-    picture: test,
+    picture: jpDev,
     message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer vitae justo eget magna. Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet. Vitae nunc sed velit dignissim sodales. Nibh tellus molestie nunc non blandit"
   },
   {
     title: "Dataloggeur ",
-    picture: test,
+    picture: datalog,
     message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer vitae justo eget magna. Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet. Vitae nunc sed velit dignissim sodales. Nibh tellus molestie nunc non blandit"
   },
   {
     title: "Installation Domotique",
-    picture: test,
+    picture: dom,
     message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer vitae justo eget magna. Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet. Vitae nunc sed velit dignissim sodales. Nibh tellus molestie nunc non blandit"
   },
   {
     title: "Tee-shirt connectée",
-    picture: test,
+    picture: teeShirt,
     message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer vitae justo eget magna. Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet. Vitae nunc sed velit dignissim sodales. Nibh tellus molestie nunc non blandit"
   },
 ]
@@ -58,7 +61,7 @@ const CarouselProject = () => {
                       <p className="mt-2">{item.message}</p>
                     </div>
                     <div className="sm:max-w-xs">
-                      <Image src={item.picture} alt="Image project" width={300} height={300} className="w-full sm:w-auto" />
+                      <Image src={item.picture} alt="Image project" width={1000} height={1000} className="w-full sm:w-auto" />
                     </div>
                   </CardContent>
                 </Card>

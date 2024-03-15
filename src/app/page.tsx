@@ -7,7 +7,6 @@ import Image from 'next/image';
 import logoLTG from '../../public/image/logoLTG-tech.svg'
 import logoPrimservice from '../../public/image/logoPrimservice.svg'
 
-
 const home = () => {
 
   return (
