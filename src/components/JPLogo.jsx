@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const JPLogo = () => (
+const JPLogo = () => (
   <svg
     version="1.0"
     xmlns="http://www.w3.org/2000/svg"
@@ -33,3 +33,5 @@ export const JPLogo = () => (
     </g>
   </svg>
 );
+
+export default JPLogo;

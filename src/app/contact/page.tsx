@@ -6,7 +6,7 @@ import React from 'react'
 const contact = () => {
   return (
     <>
-    <Navbar activePage={"contact"}/>
+    <Navbar activePage={"Contact"}/>
       <h1>contact page</h1>
     </>
   )

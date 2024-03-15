@@ -4,7 +4,7 @@ import React from 'react'
 const serices = () => {
   return (
     <>
-    <Navbar activePage={"services"}/>
+    <Navbar activePage={"Services"}/>
       <h1>Services page</h1>
     </>
   )

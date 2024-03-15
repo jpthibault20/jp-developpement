@@ -7,7 +7,7 @@ const developer = () => {
     <div className=''>
 
     </div>
-      <Navbar activePage={"developer"}/>
+      <Navbar activePage={"Developpeurs"}/>
 
       <h1>developer page</h1>
 

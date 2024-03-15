@@ -1,14 +1,16 @@
 import Navbar from '@/components/Navbar'
 import React from 'react'
-import { Button } from "@nextui-org/react";
+import Carousel from '@/components/Carousel';
+import { Button } from "@/components/ui/button"
+
 
 const home = () => {
 
   return (
     <>
-      <Navbar activePage={"accueil"} />
+      <Navbar activePage={"Accueil"} />
 
-      <h1 className='text-center mt-20 text-3xl'>Qui Sommes Nous ?</h1>
+      <h1 className='text-center mt-10 text-3xl'>Qui Sommes Nous ?</h1>
 
       <p className='m-10 lg:mx-60 leading-relaxed text-justify'>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hac habitasse platea dictumst vestibulum.
@@ -19,11 +21,11 @@ const home = () => {
       </p>
 
       <div className='lg:place-content-center lg:grid lg:grid-cols-2 lg:gap-48 lg:mx-auto place-content-center grid grid-cols-2 gap-10 mx-auto'>
-        <Button radius="full" className="bg-[#4f46e5] text-white drop-shadow-xl">
+        <Button variant="ghost" className="bg-[#4f46e5] text-white drop-shadow-xl rounded-2xl">
           Contactez-nous
         </Button>
 
-        <Button radius="full" className="bg-[#4f46e5] text-white drop-shadow-xl">
+        <Button variant="ghost" className="bg-[#4f46e5] text-white drop-shadow-xl rounded-2xl">
           Obtenir un devis
         </Button>
       </div>
@@ -40,7 +42,7 @@ const home = () => {
           Ipsum a arcu cursus vitae congue mauris.
         </p>
 
-
+        <Carousel />
 
       </div>
 
