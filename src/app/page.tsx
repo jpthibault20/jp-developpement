@@ -1,7 +1,11 @@
 import Navbar from '@/components/Navbar'
 import React from 'react'
 import Carousel from '@/components/CarouselProject';
+import BoxOpinion from "@/components/Reviews"
 import { Button } from "@/components/ui/button"
+import Image from 'next/image';
+import logoLTG from '../../public/image/logoLTG-tech.svg'
+import logoPrimservice from '../../public/image/logoPrimservice.svg'
 
 
 const home = () => {
@@ -24,7 +28,6 @@ const home = () => {
         <Button variant="ghost" className="bg-[#4f46e5] text-white drop-shadow-xl rounded-2xl">
           Contactez-nous
         </Button>
-
         <Button variant="ghost" className="bg-[#4f46e5] text-white drop-shadow-xl rounded-2xl">
           Obtenir un devis
         </Button>
@@ -33,7 +36,6 @@ const home = () => {
 
       <div className="w-full  bg-[#4f46e5] mt-20 text-[#c7d2fe]">
         <h1 className='text-center mt-10 text-3xl'>Nos Compétences</h1>
-
         <p className='m-10 lg:mx-60 leading-relaxed text-justify'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           Eu turpis egestas pretium aenean pharetra. Porttitor massa id neque aliquam vestibulum morbi blandit cursus. Semper feugiat nibh sed pulvinar proin.
@@ -41,11 +43,25 @@ const home = () => {
           Tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Orci a scelerisque purus semper eget. Lobortis elementum nibh tellus molestie nunc non blandit.
           Ipsum a arcu cursus vitae congue mauris.
         </p>
-
         <Carousel />
-
       </div>
 
+      <div className='m-10 lg:mx-60 '>
+        <h1 className="text-center my-10 text-3xl">Ce Qu&apos;ils Disent De Nous</h1>
+        <div>
+          <BoxOpinion />
+        </div>
+      </div>
+
+      <div>
+        <h1 className="text-center mt-10 mb-2 text-xl">Ils Nous Ont Fais Confiance</h1>
+        <div className='grid grid-cols-4 gap-4 items-center justify-items-center'>
+          <div></div>
+          <Image src={logoLTG} alt={"logo LTG-tech"} width={100} height={100} />
+          <Image src={logoPrimservice} alt={"logo Primservice"} width={100} height={100} />
+          <div></div>
+        </div>
+      </div>
     </>
   )
 }
