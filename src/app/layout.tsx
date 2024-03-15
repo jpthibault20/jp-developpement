@@ -1,7 +1,7 @@
 
 import "./globals.css";
 import { Inter } from "next/font/google";
-import {NextUIProvider} from "@nextui-org/react";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,12 +16,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    // <NextUIProvider>
-      <html lang="fr" >
-        <body className={`${inter.className}`}>
-          {children}
-        </body>
-      </html>
-    // </NextUIProvider>
+    <html lang="fr">
+      <body className={`${inter.className} min-h-screen flex flex-col`}>
+        {children}
+        <Footer />
+      </body>
+      
+    </html>
   )
 }

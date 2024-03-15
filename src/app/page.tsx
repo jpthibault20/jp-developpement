@@ -7,6 +7,7 @@ const home = () => {
     <>
       <Navbar activePage={"accueil"}/>
       <h1 className=''>welcome home page</h1>
+      
     </>
   )
 }
