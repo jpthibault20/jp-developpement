@@ -1,6 +1,6 @@
 import Navbar from '@/components/Navbar'
 import React from 'react'
-import Carousel from '@/components/Carousel';
+import Carousel from '@/components/CarouselProject';
 import { Button } from "@/components/ui/button"
 
 
