@@ -7,7 +7,8 @@
     margin: 0;
     min-height: 10vh;
     background-repeat: no-repeat;
-    background: linear-gradient(90deg, rgba(250, 230, 230, 0.5) 0%, rgb(225, 235, 255) 50%, rgb(250, 230, 230, 0.5) 100%);
+    background: linear-gradient(90deg, rgb(250, 230, 230) 0%, rgb(225, 235, 255) 50%, rgb(250, 230, 230) 100%);
+    color: #525252;
 
   }
 }
