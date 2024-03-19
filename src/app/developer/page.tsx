@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Navbar from '@/components/Navbar'
 import React from 'react'
 import { Button } from '@/components/ui/button';
@@ -8,28 +9,28 @@ const developer = () => {
 
   const servicesItems = [
     {
-      Nom: 'Jeane',
-      Prenom: 'Dupont',
-      picture: test,
-      description: 'Un système est conçu, géré et déployé après avoir été correctement défini depuis son cahier de charges fonctionnel.'
+      Name: 'Jeane',
+      surname: 'Dupont',
+      picture: '/image/testDev.jpg',
+      description: 'Développeur web full-stack passionné, je maîtrise HTML, CSS, JavaScript, PHP, Python et Java. Je suis rigoureux, méthodique et doté d un bon esprit d équipe.'
     },
     {
-      Nom: 'Jeane',
-      Prenom: 'Dupont',
-      picture: test,
-      description: 'Un système est conçu, géré et déployé après avoir été correctement défini depuis son cahier de charges fonctionnel.'
+      Name: 'Jeane',
+      surname: 'Dupont',
+      picture: '/image/testDev.jpg',
+      description: 'Développeur web full-stack passionné, je maîtrise HTML, CSS, JavaScript, PHP, Python et Java. Je suis rigoureux, méthodique et doté d un bon esprit d équipe.'
     },
     {
-      Nom: 'Jeane',
-      Prenom: 'Dupont',
-      picture: test,
-      description: 'Un système est conçu, géré et déployé après avoir été correctement défini depuis son cahier de charges fonctionnel.'
+      Name: 'Jeane',
+      surname: 'Dupont',
+      picture: '/image/testDev.jpg',
+      description: 'Développeur web full-stack passionné, je maîtrise HTML, CSS, JavaScript, PHP, Python et Java. Je suis rigoureux, méthodique et doté d un bon esprit d équipe.'
     },
     {
-      Nom: 'Jeane',
-      Prenom: 'Dupont',
-      picture: test,
-      description: 'Un système est conçu, géré et déployé après avoir été correctement défini depuis son cahier de charges fonctionnel.'
+      Name: 'Jeane',
+      surname: 'Dupont',
+      picture: '/image/testDev.jpg',
+      description: 'Développeur web full-stack passionné, je maîtrise HTML, CSS, JavaScript, PHP, Python et Java. Je suis rigoureux, méthodique et doté d un bon esprit d équipe.'
     },
     // Ajouter d'autres objets ici si nécessaire
   ];
@@ -55,26 +56,23 @@ const developer = () => {
       </div>
 
       <div className="  bg-[#4f46e5] mt-20 py-10 mb-20">
-        {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 sm:gap-x-10 md:gap-x-40 lg:grid-cols-2 lg:gap-x-96 gap-y-40 mx-32"> */}
         <div className="grid gap-10 mx-20 grid-cols-1 md:gap-32 lg:gap-10 lg:grid-cols-2 lg:gap-y-32 xl:grid-cols-2 xl:gap-10 xl:gap-x-72 xl:gap-y-40">
           {servicesItems.map((item, index) => (
-            <div key={index} className="bg-white shadow-md rounded-lg p-4">
-
-              <div className='hidden sm:flex items-center'>
-                <Image src={item.picture} alt="Image project" width={100} height={100} className="w-full sm:w-1/2" />
-                <h2 className="text-[#504f70] text-lg font-bold text-center w-full">{item.title}</h2>
-              </div>
-
-              <div className='block sm:hidden items-center'>
-                <h2 className="text-[#504f70] text-lg font-bold text-center w-full mb-4">{item.title}</h2>
-                <Image src={item.picture} alt="Image project" width={100} height={100} className="w-full sm:w-1/2" />
-              </div>
-
-              <p className="text-gray-600  h-40 place-items-center flex">{item.description}</p>
-              <div className='flex justify-center'>
-                <Button variant="ghost" className="bg-[#4f46e5] text-white drop-shadow-xl rounded-2xl w-[150px] mr-10 ">
-                  Obtenir un devis
-                </Button>
+            <div key={index} className="card lg:card-side bg-[#faf3f3] shadow-xl">
+              <figure className='ml-4'>
+                <img src={item.picture} alt="cover project" className='mask mask-squircle' />
+              </figure>
+              <div className="card-body">
+                <div className='flex'>
+                  <h2 className="card-title font-extrabold">{item.surname}</h2>
+                  <h2 className="card-title ml-2">{item.Name}</h2>
+                </div>
+                <p>{item.description}</p>
+                <div className="card-actions justify-end">
+                  <Button variant="ghost" className="bg-[#4f46e5] text-[#dde3ff] drop-shadow-xl rounded-2xl w-[150]">
+                    contact
+                  </Button>
+                </div>
               </div>
             </div>
           ))}

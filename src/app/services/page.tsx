@@ -49,7 +49,7 @@ const serices = () => {
       <div className="  bg-[#4f46e5] mt-20 py-10 mb-20">
         <div className="grid gap-10 mx-20 grid-cols-1 md:gap-32 lg:gap-10 lg:grid-cols-2 lg:gap-y-32 xl:grid-cols-2 xl:gap-10 xl:gap-x-72 xl:gap-y-40">
           {servicesItems.map((item, index) => (
-            <div key={index} className="card lg:card-side bg-[#dde3ff] shadow-xl">
+            <div key={index} className="card lg:card-side bg-[#faf3f3] shadow-xl">
               <figure className=''>
                 <img src={item.picture} alt="cover project" />
               </figure>
