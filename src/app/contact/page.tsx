@@ -13,7 +13,7 @@ const Contact = () => {
         <div className='flex items-center justify-center mx-20'>
           <div className='md:mb-10'>
             <h1 className='text-center text-3xl'>text</h1>
-            <p className='leading-relaxed text-justify mt-20'>
+            <p className='leading-relaxed text-justify mt-20 lg:mx-0 mx-20'>
               id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia at quis risus sed vulputate
               odio ut enim blandit volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum non consectetur a erat nam at lectus urna duis convallis
               convallis tellus id interdum velit laoreet id donec ultrices tincidunt arcu non sodales neque sodales ut etiam sit amet nisl purus in mollis nunc sed id semper
