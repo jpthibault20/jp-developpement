@@ -9,9 +9,9 @@ const Contact = () => {
     <>
       <Navbar activePage={"Contact"} />
 
-      <div className='grid gap-10 ml-20 grid-cols-2 mt-20'>
+      <div className='lg:grid lg:gap-10 lg:ml-20 lg:grid-cols-2 lg:mt-20 md:mt-20'>
         <div className='flex items-center justify-center mx-20'>
-          <div>
+          <div className='md:mb-10'>
             <h1 className='text-center text-3xl'>text</h1>
             <p className='leading-relaxed text-justify mt-20'>
               id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia at quis risus sed vulputate
@@ -23,8 +23,11 @@ const Contact = () => {
             </p>
           </div>
         </div>
-        <div className='bg-[#4f46e5] p-20'>
-          <Contactform />
+        <div className='bg-[#4f46e5] p-20 flex items-center justify-center'>
+          <div className=' w-80'>
+            <Contactform />
+          </div>
+          
         </div>
       </div>
     </>
