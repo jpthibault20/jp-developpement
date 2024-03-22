@@ -1,3 +1,4 @@
+"use client"
 import Navbar from '@/components/Navbar'
 import React from 'react'
 import Carousel from '@/components/CarouselProject';
@@ -6,8 +7,10 @@ import { Button } from "@/components/ui/button"
 import Image from 'next/image';
 import logoLTG from '../../public/image/logoLTG-tech.svg'
 import logoPrimservice from '../../public/image/logoPrimservice.svg'
+import Link from "next/link"
 
 const home = () => {
+
 
   return (
     <>
@@ -24,13 +27,17 @@ const home = () => {
       </p>
 
       <div className='flex justify-center'>
+        <Link href={"/contact"}>
           <Button variant="ghost" className="bg-[#4f46e5] text-white drop-shadow-xl rounded-2xl w-[150px] mr-10">
             Contactez-nous
           </Button>
+        </Link>
+        <Link href={"/contact"}>
           <Button variant="ghost" className="bg-[#4f46e5] text-white drop-shadow-xl rounded-2xl w-[150px]">
             Obtenir un devis
           </Button>
-        </div>
+        </Link>
+      </div>
 
 
       <div className="  bg-[#4f46e5] mt-20 text-[#c7d2fe]">
@@ -45,12 +52,16 @@ const home = () => {
         <Carousel />
 
         <div className='flex justify-center mb-10'>
-          <Button variant="ghost" className="bg-[#c7d2fe] text-black drop-shadow-xl rounded-2xl w-[150px] mr-10">
-            Contactez-nous
-          </Button>
-          <Button variant="ghost" className="bg-[#c7d2fe] text-black drop-shadow-xl rounded-2xl w-[150]">
-            Obtenir un devis
-          </Button>
+          <Link href={"/contact"}>
+            <Button variant="ghost" className="bg-[#c7d2fe] text-black drop-shadow-xl rounded-2xl w-[150px] mr-10">
+              Contactez-nous
+            </Button>
+          </Link>
+          <Link href={"/contact"}>
+            <Button variant="ghost" className="bg-[#c7d2fe] text-black drop-shadow-xl rounded-2xl w-[150]">
+              Obtenir un devis
+            </Button>
+          </Link>
         </div>
       </div>
 

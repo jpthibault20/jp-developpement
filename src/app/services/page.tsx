@@ -1,11 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
+
+"use client"
 import Navbar from '@/components/Navbar'
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image';
 import test from '../../../public/image/datalogger.jpg'
 import { Button } from '@/components/ui/button';
+import Link from "next/link"
 
-const serices = () => {
+const Serices = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
   const servicesItems = [
     {
@@ -57,9 +61,11 @@ const serices = () => {
                 <h2 className="card-title">{item.title}</h2>
                 <p>{item.description}</p>
                 <div className="card-actions justify-end">
-                  <Button variant="ghost" className="bg-[#4f46e5] text-[#dde3ff] drop-shadow-xl rounded-2xl w-[150]">
-                    Obtenir un devis
-                  </Button>
+                  <Link href={"/contact"}>
+                    <Button variant="ghost" className="bg-[#4f46e5] text-[#dde3ff] drop-shadow-xl rounded-2xl w-[150]">
+                      Obtenir un devis
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -73,4 +79,4 @@ const serices = () => {
   )
 }
 
-export default serices
+export default Serices

@@ -56,6 +56,7 @@ export function Contactform() {
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
     console.log(values)
+    form.reset();
   }
 
   return (
@@ -68,7 +69,7 @@ export function Contactform() {
           render={({ field }) => (
             <FormItem>
               <FormControl>
-                <Input placeholder="Nom" {...field} className="" />
+                <Input placeholder="Nom" {...field} className=" bg-[#504f55] border border-none drop-shadow-xl" />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -81,7 +82,7 @@ export function Contactform() {
           render={({ field }) => (
             <FormItem>
               <FormControl>
-                <Input placeholder="Prenom" {...field} className="" />
+                <Input placeholder="Prenom" {...field} className="bg-[#504f55] border border-none drop-shadow-xl" />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -94,7 +95,7 @@ export function Contactform() {
           render={({ field }) => (
             <FormItem>
               <FormControl>
-                <Input placeholder="Telephone" {...field} className="" />
+                <Input placeholder="Telephone" {...field} className="bg-[#504f55] border border-none drop-shadow-xl" />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -107,7 +108,7 @@ export function Contactform() {
           render={({ field }) => (
             <FormItem>
               <FormControl>
-                <Input placeholder="Mail" {...field} className="" />
+                <Input placeholder="Mail" {...field} className="bg-[#504f55] border border-none drop-shadow-xl" />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -120,7 +121,7 @@ export function Contactform() {
           render={({ field }) => (
             <FormItem>
               <FormControl>
-                <Textarea placeholder="Message (max 2500 charactère)" {...field} className="" />
+                <Textarea placeholder="Message (max 2500 charactère)" {...field} className="bg-[#504f55] border border-none drop-shadow-xl" />
               </FormControl>
               <FormMessage />
             </FormItem>

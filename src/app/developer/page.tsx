@@ -4,6 +4,7 @@ import React from 'react'
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import test from '../../../public/image/picture profile1.svg'
+import Link from "next/link"
 
 const developer = () => {
 
@@ -37,10 +38,10 @@ const developer = () => {
 
   return (
     <>
-    <div className=''>
+      <div className=''>
 
-    </div>
-      <Navbar activePage={"Developpeurs"}/>
+      </div>
+      <Navbar activePage={"Developpeurs"} />
 
       <div>
         <h1 className='text-center mt-10 text-3xl'>Nos Developpeurs</h1>
@@ -69,9 +70,11 @@ const developer = () => {
                 </div>
                 <p>{item.description}</p>
                 <div className="card-actions justify-end">
-                  <Button variant="ghost" className="bg-[#4f46e5] text-[#dde3ff] drop-shadow-xl rounded-2xl w-[150]">
-                    contact
-                  </Button>
+                  <Link href={"/contact"}>
+                    <Button variant="ghost" className="bg-[#4f46e5] text-[#dde3ff] drop-shadow-xl rounded-2xl w-[150]">
+                      contact
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
