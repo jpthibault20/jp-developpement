@@ -71,7 +71,7 @@ const Serices = () => {
             </div>
           ))}
           {isOpen && (
-            <ContactButton isOpen={isOpen} setIsOpen={setIsOpen} message="Détail de votre projet"/>
+            <ContactButton setIsOpen={setIsOpen} message="Détail de votre projet"/>
           )}
         </div>
       </div>
