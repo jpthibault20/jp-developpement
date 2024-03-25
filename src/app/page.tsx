@@ -8,6 +8,7 @@ import Image from 'next/image';
 import logoLTG from '../../public/image/logoLTG-tech.svg'
 import logoPrimservice from '../../public/image/logoPrimservice.svg'
 import Link from "next/link"
+import ButtonHomePage from '@/components/ButtonHomePage';
 
 const home = () => {
 
@@ -27,16 +28,7 @@ const home = () => {
       </p>
 
       <div className='flex justify-center'>
-        <Link href={"/contact"}>
-          <Button variant="ghost" className="bg-[#4f46e5] text-white drop-shadow-xl rounded-2xl w-[150px] mr-10">
-            Contactez-nous
-          </Button>
-        </Link>
-        <Link href={"/contact"}>
-          <Button variant="ghost" className="bg-[#4f46e5] text-white drop-shadow-xl rounded-2xl w-[150px]">
-            Obtenir un devis
-          </Button>
-        </Link>
+        <ButtonHomePage color={"blue"}/>
       </div>
 
 
@@ -52,16 +44,7 @@ const home = () => {
         <Carousel />
 
         <div className='flex justify-center mb-10'>
-          <Link href={"/contact"}>
-            <Button variant="ghost" className="bg-[#c7d2fe] text-black drop-shadow-xl rounded-2xl w-[150px] mr-10">
-              Contactez-nous
-            </Button>
-          </Link>
-          <Link href={"/contact"}>
-            <Button variant="ghost" className="bg-[#c7d2fe] text-black drop-shadow-xl rounded-2xl w-[150]">
-              Obtenir un devis
-            </Button>
-          </Link>
+        <ButtonHomePage color={"white"}/>
         </div>
       </div>
 

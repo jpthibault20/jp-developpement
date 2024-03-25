@@ -8,15 +8,12 @@ import { Button } from "@/components/ui/button"
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
-  FormLabel,
   FormMessage,
 } from "@/components/ui/form"
 import { Textarea } from "@/components/ui/textarea"
 import { Input } from "@/components/ui/input"
-
 
 
 
@@ -38,7 +35,13 @@ const formSchema = z.object({
   }),
 })
 
-export function Contactform() {
+
+export function Contactform({message=""}: {message: string}) {
+
+  const defaultMessage = "Message";
+  const propsMessage = message || defaultMessage;
+
+
   // 1. Define your form.
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -121,7 +124,7 @@ export function Contactform() {
           render={({ field }) => (
             <FormItem>
               <FormControl>
-                <Textarea placeholder="Message (max 2500 charactère)" {...field} className="bg-[#504f55] border border-none drop-shadow-xl" />
+                <Textarea placeholder={message} {...field} className="bg-[#504f55] border border-none drop-shadow-xl" />
               </FormControl>
               <FormMessage />
             </FormItem>

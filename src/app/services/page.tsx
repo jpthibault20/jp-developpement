@@ -7,6 +7,7 @@ import Image from 'next/image';
 import test from '../../../public/image/datalogger.jpg'
 import { Button } from '@/components/ui/button';
 import Link from "next/link"
+import ContactButton from '@/components/ContactButton';
 
 const Serices = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -61,15 +62,17 @@ const Serices = () => {
                 <h2 className="card-title">{item.title}</h2>
                 <p>{item.description}</p>
                 <div className="card-actions justify-end">
-                  <Link href={"/contact"}>
-                    <Button variant="ghost" className="bg-[#4f46e5] text-[#dde3ff] drop-shadow-xl rounded-2xl w-[150]">
-                      Obtenir un devis
-                    </Button>
-                  </Link>
+                  <Button variant="ghost" className="bg-[#4f46e5] text-[#dde3ff] drop-shadow-xl rounded-2xl w-[150]" onClick={() => setIsOpen(true)}>
+                    Obtenir un devis
+                  </Button>
+                  
                 </div>
               </div>
             </div>
           ))}
+          {isOpen && (
+            <ContactButton isOpen={isOpen} setIsOpen={setIsOpen} message="Détail de votre projet"/>
+          )}
         </div>
       </div>
 

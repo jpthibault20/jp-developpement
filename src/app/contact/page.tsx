@@ -25,7 +25,7 @@ const Contact = () => {
         </div>
         <div className='bg-[#4f46e5] p-20 flex items-center justify-center'>
           <div className=' w-80'>
-            <Contactform />
+            <Contactform message="Votre message"/>
           </div>
           
         </div>
