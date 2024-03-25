@@ -18,7 +18,7 @@ const ContactButton = ({setIsOpen, message}: {setIsOpen: (load: boolean) => void
                 </div>
 
                 <div className='mt-10'>
-                    <Contactform message={message} />
+                    <Contactform message={message} setIsOpen={setIsOpen}/>
                 </div>
                 </div>
 

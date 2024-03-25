@@ -1,12 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
+"use client"
+
 import Navbar from '@/components/Navbar'
-import React from 'react'
+import React, { useState } from 'react'
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import test from '../../../public/image/picture profile1.svg'
 import Link from "next/link"
+import ContactButton from '@/components/ContactButton';
 
-const developer = () => {
+const Developer = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
   const servicesItems = [
     {
@@ -70,15 +74,16 @@ const developer = () => {
                 </div>
                 <p>{item.description}</p>
                 <div className="card-actions justify-end">
-                  <Link href={"/contact"}>
-                    <Button variant="ghost" className="bg-[#4f46e5] text-[#dde3ff] drop-shadow-xl rounded-2xl w-[150]">
-                      contact
-                    </Button>
-                  </Link>
+                  <Button variant="ghost" className="bg-[#4f46e5] text-[#dde3ff] drop-shadow-xl rounded-2xl w-[150]" onClick={() => setIsOpen(true)}>
+                    contact
+                  </Button>
                 </div>
               </div>
             </div>
           ))}
+          {isOpen && (
+            <ContactButton setIsOpen={setIsOpen} message="Détail de votre projet"/>
+          )}
         </div>
       </div>
 
@@ -86,4 +91,4 @@ const developer = () => {
   )
 }
 
-export default developer
+export default Developer
