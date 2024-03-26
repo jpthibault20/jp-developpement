@@ -12,24 +12,25 @@ export const developerItems = [
       Name: 'Jeane',
       surname: 'Dupont',
       picture: deTest,
-      description: 'Développeur web full-stack passionné, je maîtrise HTML, CSS, JavaScript, PHP, Python et Java. Je suis rigoureux, méthodique et doté d un bon esprit d équipe.'
+      description: 'Développeur web full-stack passionné, je maîtrise HTML, CSS, JavaScript, PHP, Python et Java. Je suis rigoureux, méthodique et doté d un bon esprit d équipe.',
+      portfolio: "/"
     },
     {
       Name: 'Jeane',
       surname: 'Dupont',
       picture: deTest,
-      description: 'Développeur web full-stack passionné, je maîtrise HTML, CSS, JavaScript, PHP, Python et Java. Je suis rigoureux, méthodique et doté d un bon esprit d équipe.'
-    },
+      description: 'Développeur web full-stack passionné, je maîtrise HTML, CSS, JavaScript, PHP, Python et Java. Je suis rigoureux, méthodique et doté d un bon esprit d équipe.',
+      portfolio: "/"    },
     {
       Name: 'Jeane',
       surname: 'Dupont',
       picture: deTest,
-      description: 'Développeur web full-stack passionné, je maîtrise HTML, CSS, JavaScript, PHP, Python et Java. Je suis rigoureux, méthodique et doté d un bon esprit d équipe.'
-    },
+      description: 'Développeur web full-stack passionné, je maîtrise HTML, CSS, JavaScript, PHP, Python et Java. Je suis rigoureux, méthodique et doté d un bon esprit d équipe.',
+      portfolio: "/"    },
     {
       Name: 'Jeane',
       surname: 'Dupont',
       picture: deTest,
-      description: 'Développeur web full-stack passionné, je maîtrise HTML, CSS, JavaScript, PHP, Python et Java. Je suis rigoureux, méthodique et doté d un bon esprit d équipe.'
-    },
+      description: 'Développeur web full-stack passionné, je maîtrise HTML, CSS, JavaScript, PHP, Python et Java. Je suis rigoureux, méthodique et doté d un bon esprit d équipe.',
+      portfolio: "/"    },
   ];

@@ -7,6 +7,8 @@ import { Button } from '@/components/ui/button';
 import ContactButton from '@/components/ContactButton';
 import { titleText, developerItems } from '../lib/data/developerPage';
 import Image from 'next/image'
+import { BriefcaseBusiness } from 'lucide-react';
+import Link from 'next/link';
 
 const Developer = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,6 +41,11 @@ const Developer = () => {
                 </div>
                 <p>{item.description}</p>
                 <div className="card-actions justify-end">
+                  <button className='p-2'>
+                    <Link href="/">
+                      <BriefcaseBusiness />
+                    </Link>
+                  </button>
                   <Button variant="ghost" className="bg-[#4f46e5] text-[#dde3ff] drop-shadow-xl rounded-2xl w-[150]" onClick={() => setIsOpen(true)}>
                     contact
                   </Button>
