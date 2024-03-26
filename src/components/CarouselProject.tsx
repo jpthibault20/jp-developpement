@@ -11,7 +11,7 @@ import { Card } from '@nextui-org/react'
 import { CardContent } from './ui/card'
 import Image from 'next/image';
 import Autoplay from "embla-carousel-autoplay"
-import {Project} from '@/app/homePage'
+import {Project} from '@/app/lib/data/homePage'
 
 const CarouselProject = () => {
 

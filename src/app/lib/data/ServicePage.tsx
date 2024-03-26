@@ -1,3 +1,8 @@
+import projet1 from '../../../public/image/datalogger.jpg'
+import projet2 from '../../../public/image/homeAssistant.png'
+import projet3 from '../../../public/image/reacNextjs.png'
+import projet4 from '../../../public/image/teeShirtConnect.jpg'
+
 export const TitleText = [
     {
         title: "Nos services",
@@ -8,22 +13,22 @@ export const TitleText = [
 export const servicesItems = [
     {
       title: 'Conception hd',
-      picture: '/image/testService.jpg',
+      picture: projet1,
       description: 'Un système est conçu, géré et déployé après avoir été correctement défini depuis son cahier de charges fonctionnel.'
     },
     {
       title: 'Conception',
-      picture: '/image/testService.jpg',
+      picture: projet2,
       description: 'Un système est conçu, géré et déployé après avoir été correctement défini depuis son cahier de charges fonctionnel.'
     },
     {
       title: 'Conception système embarqué',
-      picture: '/image/testService.jpg',
+      picture: projet3,
       description: 'Un système est conçu, géré et déployé après avoir été correctement défini depuis son cahier de charges fonctionnel.'
     },
     {
       title: 'Conception système embarqué',
-      picture: '/image/testService.jpg',
+      picture: projet4,
       description: 'Un système est conçu, géré et déployé après avoir été correctement défini depuis son cahier de charges fonctionnel.'
     },
 ];

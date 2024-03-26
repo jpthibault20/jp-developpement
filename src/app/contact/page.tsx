@@ -1,7 +1,7 @@
 import Navbar from '@/components/Navbar'
 import React from 'react'
 import Contactform from '@/components/Contactform'
-import { titleText } from './contactPage'
+import { titleText } from '../lib/data/contactPage'
 
 const Contact = () => {
 

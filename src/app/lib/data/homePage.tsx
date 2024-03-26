@@ -1,12 +1,12 @@
-import jpDev from '../../public/image/reacNextjs.png'
-import datalog from '../../public/image/datalogger.jpg'
-import dom from '../../public/image/homeAssistant.png'
-import teeShirt from '../../public/image/teeShirtConnect.jpg'
-import profile1 from '../../public/image/picture profile1.svg'
-import profile2 from "../../public/image/picture profile2.svg"
-import profile3 from "../../public/image/picture profile3.svg"
-import logoLTG from '../../public/image/logoLTG-tech.svg'
-import logoPrimservice from '../../public/image/logoPrimservice.svg'
+import jpDev from '../../../public/image/testService.jpg'
+import datalog from '../../../public/image/datalogger.jpg'
+import dom from '../../../public/image/homeAssistant.png'
+import teeShirt from '../../../public/image/teeShirtConnect.jpg'
+import profile1 from '../../../public/image/picture profile1.svg'
+import profile2 from "../../../public/image/picture profile2.svg"
+import profile3 from "../../../public/image/picture profile3.svg"
+import logoLTG from '../../../public/image/logoLTG-tech.svg'
+import logoPrimservice from '../../../public/image/logoPrimservice.svg'
 
 
 

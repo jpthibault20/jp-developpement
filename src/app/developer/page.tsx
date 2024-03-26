@@ -5,7 +5,8 @@ import Navbar from '@/components/Navbar'
 import React, { useState } from 'react'
 import { Button } from '@/components/ui/button';
 import ContactButton from '@/components/ContactButton';
-import { titleText, developerItems } from './developerPage';
+import { titleText, developerItems } from '../lib/data/developerPage';
+import Image from 'next/image'
 
 const Developer = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,8 +29,8 @@ const Developer = () => {
         <div className="grid gap-10 mx-20 grid-cols-1 md:gap-32 lg:gap-10 lg:grid-cols-2 lg:gap-y-32 xl:grid-cols-2 xl:gap-10 xl:gap-x-72 xl:gap-y-40">
           {developerItems.map((item, index) => (
             <div key={index} className="card lg:card-side bg-[#faf3f3] shadow-xl">
-              <figure className='ml-4'>
-                <img src={item.picture} alt="cover project" className='mask mask-squircle' />
+              <figure className='ml-4 lg:mt-0 mt-5'>
+                <Image src={item.picture} alt={"logo LTG-tech"} width={300} height={300} className='mask mask-squircle'/>
               </figure>
               <div className="card-body">
                 <div className='flex'>

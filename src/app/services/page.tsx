@@ -5,7 +5,9 @@ import Navbar from '@/components/Navbar'
 import React, { useState } from 'react'
 import { Button } from '@/components/ui/button';
 import ContactButton from '@/components/ContactButton';
-import { TitleText, servicesItems } from './ServicePage';
+import { TitleText, servicesItems } from '../lib/data/ServicePage';
+import Image from 'next/image'
+
 
 const Serices = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +27,7 @@ const Serices = () => {
           {servicesItems.map((item, index) => (
             <div key={index} className="card lg:card-side bg-[#faf3f3] shadow-xl">
               <figure className=''>
-                <img src={item.picture} alt="cover project" />
+                <Image src={item.picture} alt={"cover project"} width={300} height={300} className=''/>
               </figure>
               <div className="card-body">
                 <h2 className="card-title">{item.title}</h2>

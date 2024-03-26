@@ -6,7 +6,7 @@ import Carousel from '@/components/CarouselProject';
 import BoxOpinion from "@/components/Reviews"
 import Image from 'next/image';
 import ButtonHomePage from '@/components/ButtonHomePage';
-import {TitleText, TitleRevviews, Entreprise} from '@/app/homePage'
+import {TitleText, TitleRevviews, Entreprise} from '@/app/lib/data/homePage'
 
 const home = () => {
 

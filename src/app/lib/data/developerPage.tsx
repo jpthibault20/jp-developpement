@@ -1,3 +1,5 @@
+import deTest from '../../../public/image/testDev.jpg'
+
 export const titleText = [
     {
         title:"Nos developpeurs",
@@ -9,25 +11,25 @@ export const developerItems = [
     {
       Name: 'Jeane',
       surname: 'Dupont',
-      picture: '/image/testDev.jpg',
+      picture: deTest,
       description: 'Développeur web full-stack passionné, je maîtrise HTML, CSS, JavaScript, PHP, Python et Java. Je suis rigoureux, méthodique et doté d un bon esprit d équipe.'
     },
     {
       Name: 'Jeane',
       surname: 'Dupont',
-      picture: '/image/testDev.jpg',
+      picture: deTest,
       description: 'Développeur web full-stack passionné, je maîtrise HTML, CSS, JavaScript, PHP, Python et Java. Je suis rigoureux, méthodique et doté d un bon esprit d équipe.'
     },
     {
       Name: 'Jeane',
       surname: 'Dupont',
-      picture: '/image/testDev.jpg',
+      picture: deTest,
       description: 'Développeur web full-stack passionné, je maîtrise HTML, CSS, JavaScript, PHP, Python et Java. Je suis rigoureux, méthodique et doté d un bon esprit d équipe.'
     },
     {
       Name: 'Jeane',
       surname: 'Dupont',
-      picture: '/image/testDev.jpg',
+      picture: deTest,
       description: 'Développeur web full-stack passionné, je maîtrise HTML, CSS, JavaScript, PHP, Python et Java. Je suis rigoureux, méthodique et doté d un bon esprit d équipe.'
     },
   ];

@@ -1,5 +1,5 @@
 import ReviewCard from '@/components/ReviewCard';
-import {Reviews} from '@/app/homePage'
+import {Reviews} from '@/app/lib/data/homePage'
 
 const Home = () => {
   return (
