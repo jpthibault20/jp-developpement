@@ -44,7 +44,7 @@ const ButtonHomePage = ({ color }: { color: String }) => {
 
             {isOpen && (
 
-                <ContactButton isOpen={isOpen} setIsOpen={setIsOpen} message={message}/>
+                <ContactButton setIsOpen={setIsOpen} message={message}/>
             )}
 
         </div>
