@@ -21,9 +21,15 @@ const Developer = () => {
       <Navbar activePage={"Developpeurs"} />
 
       <div>
-        <h1 className='text-center mt-10 text-3xl'>{titleText[0].title}</h1>
+        <h1 className='text-center mt-10 text-3xl mb-20'>{titleText[0].title}</h1>
         <p className='m-10 lg:mx-60 leading-relaxed text-justify' >
-          {titleText[0].text}
+          {titleText[0].text1}
+        </p>
+        <p className='m-10 lg:mx-60 leading-relaxed text-justify' >
+          {titleText[0].text2}
+        </p>
+        <p className='m-10 lg:mx-60 leading-relaxed text-justify' >
+          {titleText[0].text3}
         </p>
       </div>
 

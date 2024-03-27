@@ -14,23 +14,23 @@ export const TitleText = [
 
 export const servicesItems = [
     {
-      title: 'Développement Web Sur Mesure',
+      title: "Développement Web Sur Mesure",
       picture: ServiceWeb,
-      description: 'Concevez des sites web dynamiques et fonctionnels qui captivent votre public et renforcent votre présence en ligne. Nos experts en développement web maîtrisent les dernières technologies pour créer des expériences utilisateur exceptionnelles, du design à la mise en ligne.'
+      description: "Concevez des sites web dynamiques et fonctionnels qui captivent votre public et renforcent votre présence en ligne. Nos experts en développement web maîtrisent les dernières technologies pour créer des expériences utilisateur exceptionnelles, du design à la mise en ligne."
     },
     {
-      title: 'Développement Logiciel Personnalisé',
+      title: "Développement Logiciel Personnalisé",
       picture: ServiceLogiciel,
-      description: 'Créez des solutions logicielles sur mesure adaptées à vos besoins spécifiques. Que vous ayez besoin d une application de gestion interne, d un système de suivi des stocks ou d un logiciel de gestion de projet, nous avons l expertise nécessaire pour transformer vos idées en réalité numérique.'
+      description: "Créez des solutions logicielles sur mesure adaptées à vos besoins spécifiques. Que vous ayez besoin d'une application de gestion interne, d'un système de suivi des stocks ou d'un logiciel de gestion de projet, nous avons l'expertise nécessaire pour transformer vos idées en réalité numérique."
     },
     {
-      title: 'Systèmes Embarqués et IoT',
+      title: "Systèmes Embarqués et IoT",
       picture: ServiceIoT,
-      description: 'Développez des systèmes embarqués innovants et des applications IoT (Internet des Objets) pour connecter et automatiser vos appareils. De la conception à l intégration, notre équipe peut vous aider à créer des solutions intelligentes et interconnectées qui améliorent l efficacité opérationnelle et ouvrent de nouvelles possibilités commerciales.'
+      description: "Développez des systèmes embarqués innovants et des applications IoT (Internet des Objets) pour connecter et automatiser vos appareils. De la conception à l'intégration, notre équipe peut vous aider à créer des solutions intelligentes et interconnectées qui améliorent l'efficacité opérationnelle et ouvrent de nouvelles possibilités commerciales."
     },
     {
-      title: 'Conception electronique',
+      title: "Conception electronique",
       picture: SServiceElectronique,
-      description: 'Notre service vous offre une expertise complète en conception électronique, taillée sur mesure pour transformer vos concepts en réalité technologique. Grâce à notre équipe dingénieurs passionnés et notre approche personnalisée, nous vous accompagnons depuis la phase de conception jusqu à la concrétisation de votre projet électronique.'
+      description: "Notre service vous offre une expertise complète en conception électronique, taillée sur mesure pour transformer vos concepts en réalité technologique. Grâce à notre équipe dingénieurs passionnés et notre approche personnalisée, nous vous accompagnons depuis la phase de conception jusqu à la concrétisation de votre projet électronique."
     },
 ];
