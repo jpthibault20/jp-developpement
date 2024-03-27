@@ -18,7 +18,7 @@ export const developerItems = [
       surname: "Thibault",
       picture: profilThibault,
       description: "Thibault excelle dans la conception et l'implémentation de solutions technologiques avancées. Partenaire idéal pour tous vos projets ambitieux, il transforme vos idées en réalité avec précision et ingéniosité.",
-      portfolio: "/",
+      portfolio: "https://thibault.jp-developpement.com/",
       actif: true
     },
     {

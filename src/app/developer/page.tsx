@@ -38,7 +38,7 @@ const Developer = () => {
           {developerItems.map((item, index) => (
             <div key={index} className={`${item.actif ? '' : 'blur-sm'}`}>
               <div  className="card lg:card-side bg-[#faf3f3] shadow-xl">
-                <figure className='ml-4 lg:mt-0 mt-5'>
+                <figure className='mx-4 md:ml-4 lg:mt-0 mt-5'>
                   <Image src={item.picture} alt={"logo LTG-tech"} width={300} height={300} className='mask mask-squircle'/>
                 </figure>
                 <div className="card-body">
@@ -49,7 +49,7 @@ const Developer = () => {
                   <p>{item.description}</p>
                   <div className={`${item.actif ? 'card-actions justify-end' : 'hidden'}`}>
                     <button className='p-2'>
-                      <Link href="/">
+                      <Link href={item.portfolio}>
                         <BriefcaseBusiness />
                       </Link>
                     </button>
