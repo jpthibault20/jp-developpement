@@ -1,6 +1,7 @@
 export const titleText = [
     {
         title: "Nous contacter",
-        text: "id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia at quis risus sed vulputate odio ut enim blandit volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum non consectetur a erat nam at lectus urna duis convallis convallis tellus id interdum velit laoreet id donec ultrices tincidunt arcu non sodales neque sodales ut etiam sit amet nisl purus in mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac auctor augue mauris augue neque gravida in fermentum et sollicitudin ac orci phasellus egestas tellus rutrum t ellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus quam id leo in vitae tur"
+        text1: "Vous avez une idée passionnante ou un projet ambitieux en tête ?",
+        text2: "Ne cherchez pas plus loin. Chez JP-Développement, nous sommes là pour vous aider à concrétiser vos rêves technologiques. Complétez le formulaire et indiquez-nous en quoi nous pouvons vous être utile. Que ce soit pour discuter d'une idée de projet, demander un devis ou simplement en savoir plus sur nos services, notre équipe est prête à vous écouter et à vous accompagner à chaque étape du processus. N'hésitez pas à nous contacter dès aujourd'hui pour commencer à façonner l'avenir ensemble."
     }
 ]

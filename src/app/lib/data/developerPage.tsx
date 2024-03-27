@@ -1,4 +1,4 @@
-import profilThibault from '../../../public/image/fakeDev1.jpg'
+import profilThibault from '../../../public/image/devThibault.jpg'
 import fakeDev1 from '../../../public/image/fakeDev1.jpg'
 import fakeDev2 from '../../../public/image/fakeDev2.jpg'
 import fakeDev3 from '../../../public/image/fakeDev3.jpg'

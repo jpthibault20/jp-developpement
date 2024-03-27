@@ -15,7 +15,10 @@ const Contact = () => {
           <div className='md:mb-10'>
             <h1 className='text-center text-3xl'>{titleText[0].title}</h1>
             <p className='leading-relaxed text-justify mt-20 lg:mx-0 mx-20'>
-              {titleText[0].text}
+              {titleText[0].text1}
+            </p>
+            <p className='leading-relaxed mt-10 lg:mx-0 mx-20'>
+              {titleText[0].text2}
             </p>
           </div>
         </div>
