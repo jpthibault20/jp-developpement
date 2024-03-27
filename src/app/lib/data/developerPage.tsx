@@ -1,4 +1,7 @@
-import deTest from '../../../public/image/testDev.jpg'
+import profilThibault from '../../../public/image/fakeDev1.jpg'
+import fakeDev1 from '../../../public/image/fakeDev1.jpg'
+import fakeDev2 from '../../../public/image/fakeDev2.jpg'
+import fakeDev3 from '../../../public/image/fakeDev3.jpg'
 
 export const titleText = [
     {
@@ -9,9 +12,9 @@ export const titleText = [
 
 export const developerItems = [
     {
-      Name: 'Jeane',
-      surname: 'Dupont',
-      picture: deTest,
+      Name: 'JEANPIERRE',
+      surname: 'Thibault',
+      picture: profilThibault,
       description: 'Développeur web full-stack passionné, je maîtrise HTML, CSS, JavaScript, PHP, Python et Java. Je suis rigoureux, méthodique et doté d un bon esprit d équipe.',
       portfolio: "/",
       actif: true
@@ -19,24 +22,24 @@ export const developerItems = [
     {
       Name: 'Jeane',
       surname: 'Dupont',
-      picture: deTest,
+      picture: fakeDev1,
       description: 'Développeur web full-stack passionné, je maîtrise HTML, CSS, JavaScript, PHP, Python et Java. Je suis rigoureux, méthodique et doté d un bon esprit d équipe.',
       portfolio: "/",
       actif: false
     },
     {
-      Name: 'Jeane',
-      surname: 'Dupont',
-      picture: deTest,
-      description: 'Développeur web full-stack passionné, je maîtrise HTML, CSS, JavaScript, PHP, Python et Java. Je suis rigoureux, méthodique et doté d un bon esprit d équipe.',
+      Name: 'Mickey ',
+      surname: 'J. Harvell',
+      picture: fakeDev2,
+      description: 'Donec et ultricies nisi. Nulla rhoncus ornare sapien, at aliquet urna dapibus sit amet. Suspendisse a lectus finibus, bibendum orci at, semper nisl. Donec eu.',
       portfolio: "/",
       actif: false
     },
     {
-      Name: 'Jeane',
-      surname: 'Dupont',
-      picture: deTest,
-      description: 'Développeur web full-stack passionné, je maîtrise HTML, CSS, JavaScript, PHP, Python et Java. Je suis rigoureux, méthodique et doté d un bon esprit d équipe.',
+      Name: 'Ferrau ',
+      surname: 'Picard',
+      picture: fakeDev3,
+      description: 'Développeur web full-stack passionné, je maîtrise HTML, htr CSS, JavaScript, PHP, Python et Java. Je suis rigoureux, ddd méthodique et doté d un bon esprit',
       portfolio: "/",
       actif: false
     },

@@ -17,8 +17,14 @@ const home = () => {
 
       <h1 className='text-center mt-10 text-3xl'>{TitleText[0].title}</h1>
 
-      <p className='m-10 lg:mx-60 leading-relaxed text-justify'>
-        {TitleText[0].text}
+      <p className='mt-10 mx-10 lg:mx-60 leading-relaxed text-justify'>
+        {TitleText[0].text1}
+      </p>
+      <p className='mt-10 mx-10 lg:mx-60 leading-relaxed text-justify'>
+        {TitleText[0].text2}
+      </p>
+      <p className='mt-10 mb-10 mx-10 lg:mx-60 leading-relaxed text-justify'>
+        {TitleText[0].text3}
       </p>
 
       <div className='flex justify-center'>
@@ -29,7 +35,7 @@ const home = () => {
       <div className="  bg-[#4f46e5] mt-20 text-[#c7d2fe]">
         <h1 className='text-center mt-10 text-3xl'>{TitleText[1].title}</h1>
         <p className='m-10 lg:mx-60 leading-relaxed text-justify'>
-          {TitleText[1].text}
+          {TitleText[1].text1}
         </p>
         <Carousel />
 

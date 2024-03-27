@@ -29,9 +29,9 @@ const CarouselProject = () => {
               <div className="p-1">
                 <Card>
                   <CardContent className="flex flex-col sm:flex-row items-center justify-center p-6">
-                    <div className="mb-4 sm:mb-0 sm:mr-10">
+                    <div className="mb-4 sm:mb-0 sm:mr-10 w-80">
                       <span className="text-xl font-semibold">{item.title}</span>
-                      <p className="mt-2">{item.message}</p>
+                      <p className="mt-2 text-justify">{item.message}</p>
                     </div>
                     <div className="sm:max-w-xs">
                       <Image src={item.picture} alt="Image project" width={1000} height={1000} className="w-full sm:w-auto" />
