@@ -5,7 +5,7 @@ import Link from "next/link"
 import { Menu } from "lucide-react"
 import JPLogo from "@/components/JPLogo"
 
-export default function Navbar({activePage}:{activePage:string}) {
+export default function Navbar({ activePage }: { activePage: string }) {
   const [state, setState] = React.useState(false)
 
   const menus = [
@@ -32,19 +32,18 @@ export default function Navbar({activePage}:{activePage:string}) {
           </div>
         </div>
         <div
-          className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-            state ? "block" : "hidden"
-          }`}
+          className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${state ? "block" : "hidden"
+            }`}
         >
           <ul className="justify-center items-center space-y-8 md:flex md:space-x-6 md:space-y-0">
             {menus.map((item, idx) => (
               item.title === activePage ? (
                 <li key={idx} className="text-gray-600 font-bold hover:text-indigo-600">
-                  <Link href={item.path}>{item.title}</Link>
+                  <Link href={item.path} tabIndex={0}>{item.title}</Link>
                 </li>
               ) : (
                 <li key={idx} className="text-gray-600 hover:text-indigo-600">
-                  <Link href={item.path}>{item.title}</Link>
+                  <Link href={item.path} tabIndex={0}>{item.title}</Link>
                 </li>
               )
             ))}

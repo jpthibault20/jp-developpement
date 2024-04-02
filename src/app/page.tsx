@@ -6,7 +6,7 @@ import Carousel from '@/components/CarouselProject';
 import BoxOpinion from "@/components/Reviews"
 import Image from 'next/image';
 import ButtonHomePage from '@/components/ButtonHomePage';
-import {TitleText, TitleRevviews, Entreprise} from '@/app/lib/data/homePage'
+import { TitleText, TitleRevviews, Entreprise } from '@/app/lib/data/homePage'
 
 const home = () => {
 
@@ -28,19 +28,18 @@ const home = () => {
       </p>
 
       <div className='flex justify-center'>
-        <ButtonHomePage color={"blue"}/>
+        <ButtonHomePage color={"blue"} />
       </div>
 
 
       <div className="  bg-[#4f46e5] mt-20 text-[#c7d2fe]">
         <h1 className='text-center mt-10 text-3xl'>{TitleText[1].title}</h1>
-        <p className='m-10 lg:mx-60 leading-relaxed text-justify'>
-          {TitleText[1].text1}
-        </p>
+        <p className='m-10 lg:mx-60 leading-relaxed text-justify'>{TitleText[1].text1}</p>
+
         <Carousel />
 
         <div className='flex justify-center mb-10'>
-        <ButtonHomePage color={"white"}/>
+          <ButtonHomePage color={"white"} />
         </div>
       </div>
 

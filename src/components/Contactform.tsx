@@ -91,7 +91,7 @@ export function Contactform({ message = "", setIsOpen = () => { } }: { message?:
             render={({ field }) => (
               <FormItem>
                 <FormControl>
-                  <Input placeholder="Nom" {...field} className=" bg-[#504f55] border border-none drop-shadow-xl" />
+                  <Input placeholder="Nom" {...field} className=" bg-[#504f55] border border-none drop-shadow-xl" tabIndex={0} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -104,7 +104,7 @@ export function Contactform({ message = "", setIsOpen = () => { } }: { message?:
             render={({ field }) => (
               <FormItem>
                 <FormControl>
-                  <Input placeholder="Prenom" {...field} className="bg-[#504f55] border border-none drop-shadow-xl" />
+                  <Input placeholder="Prenom" {...field} className="bg-[#504f55] border border-none drop-shadow-xl" tabIndex={0} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -117,7 +117,7 @@ export function Contactform({ message = "", setIsOpen = () => { } }: { message?:
             render={({ field }) => (
               <FormItem>
                 <FormControl>
-                  <Input placeholder="Telephone" {...field} className="bg-[#504f55] border border-none drop-shadow-xl" />
+                  <Input placeholder="Telephone" {...field} className="bg-[#504f55] border border-none drop-shadow-xl" tabIndex={0} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -130,7 +130,7 @@ export function Contactform({ message = "", setIsOpen = () => { } }: { message?:
             render={({ field }) => (
               <FormItem>
                 <FormControl>
-                  <Input placeholder="Mail" {...field} className="bg-[#504f55] border border-none drop-shadow-xl" />
+                  <Input placeholder="Mail" {...field} className="bg-[#504f55] border border-none drop-shadow-xl" tabIndex={0} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -143,14 +143,14 @@ export function Contactform({ message = "", setIsOpen = () => { } }: { message?:
             render={({ field }) => (
               <FormItem>
                 <FormControl>
-                  <Textarea placeholder={message} {...field} className="bg-[#504f55] border border-none drop-shadow-xl" />
+                  <Textarea placeholder={message} {...field} className="bg-[#504f55] border border-none drop-shadow-xl" tabIndex={0} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
             )}
           />
 
-          <Button type="submit" className="bg-[#c7d2fe] text-black drop-shadow-xl rounded-2xl hover:bg-[#151335] hover:text-white">Submit</Button>
+          <Button type="submit" className="bg-[#c7d2fe] text-black drop-shadow-xl rounded-2xl hover:bg-[#151335] hover:text-white" tabIndex={0}>Submit</Button>
         </form>
       </Form>
     </>
