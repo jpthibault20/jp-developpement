@@ -25,7 +25,7 @@ const ButtonHomePage = ({ color }: { color: String }) => {
                         setIsOpen(true)
                         setMessage("Détail de votre projet")
                     }} tabIndex={0}
-                        aria-label="Contactez-nous">
+                        aria-label="Obtenir un devis">
                         Obtenir un devis
                     </Button>
                 </>
@@ -44,7 +44,7 @@ const ButtonHomePage = ({ color }: { color: String }) => {
                         setIsOpen(true)
                         setMessage("Détail de votre projet")
                     }} tabIndex={0}
-                        aria-label="Contactez-nous">
+                        aria-label="Obtenir un devis">
                         Obtenir un devis
                     </Button>
                 </>
