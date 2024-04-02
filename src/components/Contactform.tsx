@@ -53,29 +53,29 @@ export function Contactform({ message = "", setIsOpen = () => { } }: { message?:
   const sendEmail = async (values: z.infer<typeof formSchema>) => {
 
     try {
-        const response = await fetch('/api/send', {
-          method: 'POST',
-          headers: {
-            'content-Type': 'application.json',
-          },
-          body: JSON.stringify(values),
-        })
+      const response = await fetch('/api/send', {
+        method: 'POST',
+        headers: {
+          'content-Type': 'application.json',
+        },
+        body: JSON.stringify(values),
+      })
 
-        if (response.status === 200) {
+      if (response.status === 200) {
         console.log(values)
         sendEmail;
         toast.success("Message envoyé");
         form.reset();
         if (message !== "Votre message") setIsOpen(false);
-        }
-        else {
-          throw new Error(`Email sending failed with status: ${response.status}`);
-        }
-      } catch (error) {
-        console.error("Error sending email:", error);
-      } finally {
-        
-        
+      }
+      else {
+        throw new Error(`Email sending failed with status: ${response.status}`);
+      }
+    } catch (error) {
+      console.error("Error sending email:", error);
+    } finally {
+
+
     }
   }
 
@@ -150,7 +150,7 @@ export function Contactform({ message = "", setIsOpen = () => { } }: { message?:
             )}
           />
 
-          <Button type="submit" className="bg-[#c7d2fe] text-black drop-shadow-xl rounded-2xl">Submit</Button>
+          <Button type="submit" className="bg-[#c7d2fe] text-black drop-shadow-xl rounded-2xl hover:bg-[#151335] hover:text-white">Submit</Button>
         </form>
       </Form>
     </>

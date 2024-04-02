@@ -37,9 +37,9 @@ const Developer = () => {
         <div className="grid gap-10 mx-20 grid-cols-1 md:gap-32 lg:gap-10 lg:grid-cols-2 lg:gap-y-32 xl:grid-cols-2 xl:gap-10 xl:gap-x-72 xl:gap-y-40">
           {developerItems.map((item, index) => (
             <div key={index} className={`${item.actif ? '' : 'blur-sm'}`}>
-              <div  className="card lg:card-side bg-[#faf3f3] shadow-xl">
+              <div className="card lg:card-side bg-[#faf3f3] shadow-xl">
                 <figure className='mx-4 md:ml-4 lg:mt-0 mt-5'>
-                  <Image src={item.picture} alt={"logo LTG-tech"} width={300} height={300} className='mask mask-squircle'/>
+                  <Image src={item.picture} alt={"logo LTG-tech"} width={300} height={300} className='mask mask-squircle' />
                 </figure>
                 <div className="card-body">
                   <div className='flex'>
@@ -53,7 +53,7 @@ const Developer = () => {
                         <BriefcaseBusiness />
                       </Link>
                     </button>
-                    <Button variant="ghost" className="bg-[#4f46e5] text-[#dde3ff] drop-shadow-xl rounded-2xl w-[150]" onClick={() => setIsOpen(true)}>
+                    <Button variant="ghost" className="bg-[#4f46e5] text-[#dde3ff] drop-shadow-xl rounded-2xl w-[150] hover:bg-[#151335] hover:text-white" onClick={() => setIsOpen(true)}>
                       contact
                     </Button>
                   </div>
@@ -62,7 +62,7 @@ const Developer = () => {
             </div>
           ))}
           {isOpen && (
-            <ContactButton setIsOpen={setIsOpen} message="Détail de votre projet"/>
+            <ContactButton setIsOpen={setIsOpen} message="Détail de votre projet" />
           )}
         </div>
       </div>
