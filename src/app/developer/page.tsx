@@ -53,7 +53,7 @@ const Developer = () => {
                         <BriefcaseBusiness />
                       </Link>
                     </button>
-                    <Button variant="ghost" className="bg-[#4f46e5] text-[#dde3ff] drop-shadow-xl rounded-2xl w-[150] hover:bg-[#151335] hover:text-white" onClick={() => setIsOpen(true)} tabIndex={0}>
+                    <Button variant="ghost" className="bg-[#4f46e5] text-[#dde3ff] drop-shadow-xl rounded-2xl w-[150] hover:bg-[#151335] hover:text-white" onClick={() => setIsOpen(true)} tabIndex={0} aria-label="Contactez-nous">
                       contact
                     </Button>
                   </div>

@@ -150,7 +150,7 @@ export function Contactform({ message = "", setIsOpen = () => { } }: { message?:
             )}
           />
 
-          <Button type="submit" className="bg-[#c7d2fe] text-black drop-shadow-xl rounded-2xl hover:bg-[#151335] hover:text-white" tabIndex={0}>Submit</Button>
+          <Button type="submit" className="bg-[#c7d2fe] text-black drop-shadow-xl rounded-2xl hover:bg-[#151335] hover:text-white" tabIndex={0} aria-label="Contactez-nous">Submit</Button>
         </form>
       </Form>
     </>

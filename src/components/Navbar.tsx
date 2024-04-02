@@ -39,11 +39,11 @@ export default function Navbar({ activePage }: { activePage: string }) {
             {menus.map((item, idx) => (
               item.title === activePage ? (
                 <li key={idx} className="text-gray-600 font-bold hover:text-indigo-600">
-                  <Link href={item.path} tabIndex={0}>{item.title}</Link>
+                  <Link href={item.path} tabIndex={0} aria-label={item.title}> {item.title}</Link>
                 </li>
               ) : (
                 <li key={idx} className="text-gray-600 hover:text-indigo-600">
-                  <Link href={item.path} tabIndex={0}>{item.title}</Link>
+                  <Link href={item.path} tabIndex={0} aria-label={item.title} >{item.title}</Link>
                 </li>
               )
             ))}
