@@ -11,18 +11,18 @@ import { Card } from '@nextui-org/react'
 import { CardContent } from './ui/card'
 import Image from 'next/image';
 import Autoplay from "embla-carousel-autoplay"
-import {Project} from '@/app/lib/data/homePage'
+import { Project } from '@/app/lib/data/homePage'
 
 const CarouselProject = () => {
 
   return (
     <div className="flex justify-center mb-10">
       <Carousel className="w-full max-w-2xl"
-      plugins={[
-        Autoplay({
-          delay: 2000,
-        }),
-      ]}>
+        plugins={[
+          Autoplay({
+            delay: 5000,
+          }),
+        ]}>
         <CarouselContent>
           {Project.map((item, idx) => (
             <CarouselItem key={idx}>
@@ -30,7 +30,7 @@ const CarouselProject = () => {
                 <Card>
                   <CardContent className="flex flex-col sm:flex-row items-center justify-center p-6">
                     <div className="mb-4 sm:mb-0 sm:mr-10 w-80">
-                      <span className="text-xl font-semibold">{item.title}</span>
+                      <h3 className="text-xl font-semibold">{item.title}</h3>
                       <p className="mt-2 text-justify">{item.message}</p>
                     </div>
                     <div className="sm:max-w-xs">
